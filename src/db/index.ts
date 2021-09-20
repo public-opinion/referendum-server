@@ -1,7 +1,10 @@
 
 
-var sqlite3 = require("sqlite3").verbose();
-var db = new sqlite3.Database(":memory:");
+import mysql from "mysql2/promise";
+
+import createConn from "./dbconfig";
+
+export { default as default } from "./dbconfig";
 
 // db.serialize(function(){
   
@@ -21,15 +24,18 @@ var db = new sqlite3.Database(":memory:");
 // });
 
 export async function get(q: string, params?: any[]){
-  return new Promise((res, reject) => {
-    db.get(q, params, (err: any, row: any) => {
-      if(err){
-        reject(err);
-      } else{
-        res(row)
-      }
-    })
-  });
+  let conn = await createConn();
+  let [ rows, _ ] = await conn.query(q, params);
+  if(rows instanceof Array){
+    return rows?.[0]
+  } else{
+    return rows;
+  };
 }
 
-export default db;
+
+export async function all(q: string, params?: any[]){
+  let conn = await createConn();
+  let [ rows, fields ] = await conn.query(q, params);
+  return rows;
+}

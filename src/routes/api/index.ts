@@ -4,47 +4,64 @@
 import express from "express";
 const router = express.Router();
 
-import db, { get } from "../../db";
+import createConn, { get, all } from "../../db";
 
+import {
+  /*
+  filterObjectByKeys:
+  This function is applied on database query result,
+  so as to filter out sensitive information
+  */
+  filterObjectByKeys
+} from "../../util/object";
 
-
-db.serialize(() => {
-  let _run = (q: string) => {
-    db.run(q, 
-      (err: any) => {
-        if(err){
-          console.log(q + "failed", err);
-        }
-      }
-    )
-  }
-
-  _run(`
-    CREATE TABLE topics (
-      id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+createConn({
+  multipleStatements: true
+}).then(async conn => {
+  await conn.query(`
+    CREATE TABLE IF NOT EXISTS topics (
+      id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
       title TEXT,
-      content TEXT)
-  `)
+      content TEXT);
 
-  _run(`
+  
     INSERT INTO topics
       ( id, title )
     VALUES
-      ( 12492, "Write a book together" )
+      ( 50505, "Unaffordable housing for general public" ),
+      ( 12492, "Write a book together" ),
+      ( 41242, "SFF PC Case Tier list *** weighted aspects" ),
+      ( 35353, "Improve this site" )
+    ON DUPLICATE KEY UPDATE id=id;
   `)
 
   
-  db.each("SELECT * FROM topics",
-    function(err: any, row: any) {
-      console.log(row);
-    }
-  );
-  db.get("SELECT * FROM topics",
-    function(err: any, row: any) {
-      console.log(row);
-    }
-  );
+  console.log(await all("SELECT * FROM topics"));
+  console.log(await get("SELECT * FROM topics"));
+});
 
+
+router.get('/v1/topics', (req, res) => {
+  let {
+    count = 5,
+    sort
+  }: {
+    count?: number
+    sort?: string
+  } = req.query;
+
+
+ 
+  all(
+    "SELECT * FROM topics LIMIT ?", [ count ]
+  ).then((row: any) => {
+    console.log(row);
+    let sanitized_row = filterObjectByKeys(row, [
+      'id', 'title'
+    ]);
+    
+    res.end(JSON.stringify(sanitized_row));
+  })
 })
 
 router.get('/v1/topic', (req, res) => {
@@ -57,16 +74,15 @@ router.get('/v1/topic', (req, res) => {
   } = req.query;
 
 
-  new Promise(
-    _res => setTimeout(_res, 1000)
-  ).then(() => 
-    get("SELECT * FROM topics WHERE id = ?", [ id ])
+  get(
+    "SELECT * FROM topics WHERE id = ?", [ id ]
   ).then((row: any) => {
     console.log(row);
+    let sanitized_row = filterObjectByKeys(row, [
+      'id', 'title'
+    ]);
     
-    res.end(JSON.stringify({
-      title: row?.title
-    }));
+    res.end(JSON.stringify(sanitized_row));
   })
 })
 
