@@ -59,6 +59,7 @@ router.get('/v1/topic', (req, res) => {
       'id', 'title'
     ]);
     
+    console.log(sanitized_row);
     res.end(JSON.stringify(sanitized_row));
   })
 })

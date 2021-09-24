@@ -18,7 +18,7 @@ services:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: referendum
   
-  app:
+  api-server:
     image: node:latest
     # omitted yarn install, running on windows machine
     # and npm cannot make link in ntfs
@@ -54,12 +54,17 @@ services:
     # docker exec -it referendum-server_server_1 nginx -s reload
     image: nginx:latest
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/api_conf.d:/etc/nginx/api_conf.d
+      - ./nginx/api_gateway.conf:/etc/nginx/api_gateway.conf
+      - ./nginx/api_backends.conf:/etc/nginx/api_backends.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./.secret/api_key.crt:/etc/ssl/certs/api_key.crt
+      - ./.secret/api_key.key:/etc/ssl/private/api_key.key
     ports:
       - 8000:80
       - 8080:8001
     depends_on:
-      - app
+      - api-server
       - react-client
 
 
