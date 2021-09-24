@@ -3,6 +3,10 @@
 # docker-compose logs -f
 # docker-compose down
 
+# docker-compose -f .\docker-compose.dev.yml up
+# docker-compose -f .\docker-compose.dev.yml logs -f
+# docker-compose -f .\docker-compose.dev.yml down
+
 version: "3.8"
 
 services:
@@ -16,9 +20,11 @@ services:
   
   app:
     image: node:latest
+    # omitted yarn install, running on windows machine
+    # and npm cannot make link in ntfs
     command: sh -c "yarn run dev"
     ports:
-      - 3000:3000
+      - 3001:3000
     working_dir: /app
     volumes:
       - ./:/app
@@ -33,27 +39,31 @@ services:
   react-client:
     image: node:latest
     working_dir: /app
+    ports:
+      - 3000:3000
     volumes:
-      - ../referendum-client/:/app
-    command: sh -c "yarn run start"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000"]
-      interval: 60s
-      timeout: 60s
-      retries: 3
+      - react-client-data:/app
+      - ../referendum-client/public:/app/public
+      - ../referendum-client/src:/app/src
+      - ../referendum-client/.env:/app/.env
+      - ../referendum-client/package.json:/app/package.json
+    command: sh -c "yarn install && yarn run start"
     
   
   server:
+    # docker exec -it referendum-server_server_1 nginx -s reload
     image: nginx:latest
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
-      - 8080:80
+      - 8000:80
+      - 8080:8001
     depends_on:
-      react-client:
-        condition: service_healthy
+      - app
+      - react-client
 
 
 
 volumes:
   referendum-mysql-data:
+  react-client-data:
