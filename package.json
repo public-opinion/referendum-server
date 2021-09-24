@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts"
+    "dev": "wait-port -t 10000 mysql:3306 && nodemon --legacy-watch src/index.ts"
   },
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.4",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
+    "fastify": "^3.21.3",
     "morgan": "^1.10.0",
     "mysql2": "^2.3.0",
     "ts-node": "^10.2.1",
@@ -24,6 +25,7 @@
     "@types/node": "^16.9.2",
     "@types/ws": "^7.4.7",
     "debug": "^4.3.2",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "wait-port": "^0.2.9"
   }
 }

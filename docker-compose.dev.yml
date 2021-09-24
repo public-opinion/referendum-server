@@ -1,0 +1,59 @@
+
+# docker-compose up -d
+# docker-compose logs -f
+# docker-compose down
+
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:latest
+    volumes:
+      - referendum-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: referendum
+  
+  app:
+    image: node:latest
+    command: sh -c "yarn run dev"
+    ports:
+      - 3000:3000
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+      MYSQL_DB: referendum
+    depends_on:
+      - mysql
+
+  react-client:
+    image: node:latest
+    working_dir: /app
+    volumes:
+      - ../referendum-client/:/app
+    command: sh -c "yarn run start"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 60s
+      timeout: 60s
+      retries: 3
+    
+  
+  server:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8080:80
+    depends_on:
+      react-client:
+        condition: service_healthy
+
+
+
+volumes:
+  referendum-mysql-data:

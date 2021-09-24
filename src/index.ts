@@ -9,8 +9,9 @@ import app from "./app";
 import debug from "debug"
 
 var dbg = debug('your-project-name:server');
- 
- 
+
+console.log("Hiss");
+
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
  

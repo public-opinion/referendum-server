@@ -41,29 +41,6 @@ createConn({
 });
 
 
-router.get('/v1/topics', (req, res) => {
-  let {
-    count = 5,
-    sort
-  }: {
-    count?: number
-    sort?: string
-  } = req.query;
-
-
- 
-  all(
-    "SELECT * FROM topics LIMIT ?", [ count ]
-  ).then((row: any) => {
-    console.log(row);
-    let sanitized_row = filterObjectByKeys(row, [
-      'id', 'title'
-    ]);
-    
-    res.end(JSON.stringify(sanitized_row));
-  })
-})
-
 router.get('/v1/topic', (req, res) => {
   let {
     id,
@@ -85,6 +62,9 @@ router.get('/v1/topic', (req, res) => {
     res.end(JSON.stringify(sanitized_row));
   })
 })
+
+import topicsRoute from "./topics"
+router.use(topicsRoute);
 
 
 
