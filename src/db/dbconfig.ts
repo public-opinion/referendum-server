@@ -20,7 +20,7 @@ export async function createConnection(options?: mysql.ConnectionOptions){
       database : process.env.MYSQL_DB || 'referendum'
     }, options)
   );
-  connection.connect();
+  await connection.connect();
   return connection;
 }
 

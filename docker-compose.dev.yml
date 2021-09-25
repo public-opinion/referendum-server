@@ -7,11 +7,15 @@
 # docker-compose -f .\docker-compose.dev.yml logs -f
 # docker-compose -f .\docker-compose.dev.yml down
 
+# https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/multi-container-applications-docker-compose
+
 version: "3.8"
 
 services:
   mysql:
     image: mysql:latest
+    ports:
+      - 13306:3306
     volumes:
       - referendum-mysql-data:/var/lib/mysql
     environment:
@@ -37,6 +41,7 @@ services:
       - mysql
 
   react-client:
+    # docker-compose -f .\docker-compose.dev.yml restart react-client
     image: node:latest
     working_dir: /app
     ports:

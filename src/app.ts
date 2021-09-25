@@ -17,5 +17,7 @@ import apiRouter from "./routes/api"; app.use('/api', apiRouter);
 import indexRouter from "./routes/index"; app.use(indexRouter);
 import usersRouter from "./routes/users"; app.use('/', usersRouter);
 
+import "./services/topics";
+import "./tests/topics";
 
 export default app;
