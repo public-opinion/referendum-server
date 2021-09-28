@@ -1,4 +1,5 @@
 
+import mysql from "mysql2/promise";
 
 import createConn from "./dbconfig";
 
@@ -18,12 +19,16 @@ export type Topic = {
 async function initTable(){
   let conn = await createConn();
   conn.query(`
-    CREATE TABLE IF NOT EXISTS topics (
-      id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
-      title TEXT,
-      content TEXT)
+    CREATE TABLE IF NOT EXISTS domain_topic (
+      domain_id INTEGER,
+      topic_id INTEGER)
   `);
 }
 initTable();
 
 
+export async function getTopicsOfDomain(
+  
+){
+
+}

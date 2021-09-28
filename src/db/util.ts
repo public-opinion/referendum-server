@@ -26,7 +26,7 @@ export async function all(q: string, params?: any[]){
  * "id, title, SUBSTRING(content, 3, 4)"
  * @returns 
  */
-export function splitQueryByGroup(q: string): string[] {
+export function parseQueryToColumns(q: string): string[] {
   // TODO: bracket errors, e.g. "content(substr(3, 4))))"
   let out = [];
 

@@ -19,5 +19,6 @@ import usersRouter from "./routes/users"; app.use('/', usersRouter);
 
 import "./services/topics";
 import "./tests/topics";
+import "./tests/domains";
 
 export default app;

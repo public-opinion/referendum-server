@@ -7,6 +7,9 @@ const router = express.Router();
 import topicsRoute from "./topics"
 router.use(topicsRoute);
 
+import domainsRoute from "./domains";
+router.use(domainsRoute);
+
 
 
 export default router;

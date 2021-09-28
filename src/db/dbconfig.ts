@@ -6,7 +6,9 @@ import fs from "fs"
 import path from "path/posix";
 
 
-export async function createConnection(options?: mysql.ConnectionOptions){
+export async function createConnection(
+    options?: mysql.ConnectionOptions
+){
   let connection = await mysql.createConnection(
     Object.assign({
       host     : process.env.MYSQL_HOST || 'localhost',
@@ -22,6 +24,11 @@ export async function createConnection(options?: mysql.ConnectionOptions){
   );
   await connection.connect();
   return connection;
+}
+
+export async function query(sql: string){
+  let conn = await createConnection();
+  return conn.query(sql);
 }
 
 export default createConnection;

@@ -1,4 +1,5 @@
 
+import mysql from "mysql2/promise";
 
 import createConn from "./dbconfig";
 
@@ -9,7 +10,7 @@ each file corresponds to one table?
 */
 
 // column definition
-export type Topic = {
+export type Domain = {
   id: number
   title?: string
   content?: string
@@ -18,12 +19,11 @@ export type Topic = {
 async function initTable(){
   let conn = await createConn();
   conn.query(`
-    CREATE TABLE IF NOT EXISTS topics (
+    CREATE TABLE IF NOT EXISTS domains (
       id INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
-      title TEXT,
-      content TEXT)
+      type TEXT,
+      name TEXT,
+      description TEXT)
   `);
 }
 initTable();
-
-

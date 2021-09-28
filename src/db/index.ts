@@ -19,4 +19,8 @@ export { default as default } from "./dbconfig";
 //   );
 // });
 
+import "./domains";
+import "./domain_topic";
+import "./topics";
+
 export { get, all } from "./util";
