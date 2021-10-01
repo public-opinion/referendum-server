@@ -3,7 +3,7 @@
 # docker-compose logs -f
 # docker-compose down
 
-# docker-compose -f .\docker-compose.dev.yml up
+# docker-compose -f .\docker-compose.dev.yml up -d
 # docker-compose -f .\docker-compose.dev.yml logs -f
 # docker-compose -f .\docker-compose.dev.yml down
 
@@ -26,12 +26,13 @@ services:
     image: node:latest
     # omitted yarn install, running on windows machine
     # and npm cannot make link in ntfs
-    command: sh -c "yarn run dev"
+    command: sh -c "yarn install && yarn run dev"
     ports:
       - 3001:3000
     working_dir: /app
     volumes:
       - ./:/app
+      - /app/node_modules
     environment:
       MYSQL_HOST: mysql
       MYSQL_USER: root
@@ -48,6 +49,7 @@ services:
       - 3000:3000
     volumes:
       - react-client-data:/app
+      - /app/node_modules
       - ../referendum-client/public:/app/public
       - ../referendum-client/src:/app/src
       - ../referendum-client/.env:/app/.env

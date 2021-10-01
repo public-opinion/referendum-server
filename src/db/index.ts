@@ -22,5 +22,6 @@ export { default as default } from "./dbconfig";
 import "./domains";
 import "./domain_topic";
 import "./topics";
+import "./users";
 
 export { get, all } from "./util";
