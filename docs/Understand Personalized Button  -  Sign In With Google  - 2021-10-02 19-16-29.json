@@ -1,0 +1,362 @@
+[
+  {
+    "windows": {
+      "40": {
+        "17": {
+          "id": 17,
+          "index": 9,
+          "windowId": 40,
+          "highlighted": true,
+          "active": true,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": false,
+          "incognito": false,
+          "width": 958,
+          "height": 964,
+          "lastAccessed": 1633173389836,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isArticle": false,
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://developers.google.com/identity/gsi/web/guides/personalized-button",
+          "title": "Understand Personalized Button  |  Sign In With Google",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAyVBMVEX///9ChfQPnVj7vATqQzX///8AAAD////////Q4Pygwvn+7sD////w+fWHzqv0oZq04Msdo2L93YH+8/Jlm/ZKtYH4xMDn8P7zlY1owpZ9q/frTkH7wBMsqWztWk7S7eBxo/f+9+D80VLz9/7/++9NjPWisCSLaKHPwDmrY4TVS01Jpkf73NnvcWfD5tX81WKyncP85+b7xCN3yKH8zUL95qHPthQsoU640fvyiYBMhe3+8tCW1LbfR0H60Mzb6P0spV2IsviWapsjf3LXAAAAQ3RSTlP///////AAIKD///8w////////////////////////////////////////////////////////////////////////vnP0vgAAAQpJREFUeJzNk+eSwjAMhGWfcRICgdA7R7veez/g/R8KyRaEocT/GPZPovl2dsdOBFp7fgZ2KuN7WoPO7cHGktPgpXB0eOCncUCcGoAR6fjQKhfaqkEvzzKO8tu81lOoGkBRorrFDXxzS1ipAkBEBimr/fX0hsVKPQL0rUHK5qrnYX5lce+PxrsuO+Ify0+FEOe/SrUx3yqK2VI1I3Ihvi4/y0lnvskO02IMQlSCxBA+vV0bg5my7BCtusWD4Qnq7F1O+bBBZWnJ0lgiTLoIV5EfE3ZgTci487p+USPuwQgOKI037rJOp538A3x3EL8Mtj8GBK3ZiJ7j+2FSfhxy/vbOxXGunnN5Xeu/ACSdDkdW3l+8AAAAAElFTkSuQmCC"
+        },
+        "172": {
+          "id": 172,
+          "index": 0,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170039277,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://plswiderski.medium.com/google-api-authentication-with-oauth-2-on-the-example-of-gmail-a103c897fd98",
+          "title": "Google API authentication with OAuth 2 —on the example of gmail | by Paweł Świderski | Medium",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACY0lEQVRYhe2Xv2oqQRTGBywkBlQGxEZYBVPIFkIKMStB1MYihQixsAm44AMEERTkKiqkU7GzENE3sHEllWWKPIF/kiJtFEuF9bvF1eEad9VsoY0HTnH4zsz3m1lmhiXkX/whhMwIIThRzgghlbU3qZzQ+GfmyYlXrrQTZzPf5AXgAqAuUkoRj8eRyWSQzWaRTCbhdDoPTqrX62EymbQDUErx8vICWZahFK+vr3A4HIoThsNhfH9/AwDq9TqMRiPTLBYLOI7bD8BxHIbDoaLx/zGdThGJRHbG/oxqtcr0Wq0GSZLUASilR5lvYrlc4vb2lo1vtVqKfXa7HYQQvL29QZZlGAwGZYBcLne0+Sbe399BCIHValXtSaVSMBqNWK1WAACXy6UM8PH5+WsAABAEAX6/X1WXJAl2u53VgUBgF0AQBE3mAFAoFJBKpVT1yWQCt9vN6lgstgvw9PSkGaDT6SCTyajqi8UCd3d3rE4kErsAoihqBuh2u8hms6q6LMvwer2sFkVxFyAUCmkGKJVKez/B19cXeJ5n9ePj4y4ApRTz+VwTQDAYxMPDg6o+GAy27oj7+3vlU1Aul39tPhwOodPpQClV7SkWi7BYLOwYejwe9YtoNBr9CiAajbLxkiQp9tzc3IAQwua+vr5Wv4qdTufREOl0emus0lFut9tMr1Qq6Pf7hx8jjuPQ6/VUjcfjMUKhkOJjlE6nWd9gMIDNZtual+f5wwCbdLvdeH5+RqPRQLPZRD6fh8/ng9ls3vvE2mw28DyPq6srbc/xifMCcAE4/69Z/owAVbKO6ol3YrZeOPkL7klYSXzvbOoAAAAASUVORK5CYII="
+        },
+        "173": {
+          "id": 173,
+          "index": 1,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170051647,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.google.com/search?client=firefox-b-d&q=node+oauth+server",
+          "title": "node oauth server - Google Search",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEBklEQVRYhb2XX2xTdRTH76OgzFen8UWHxCiCRnlxLvtjITEsJc3cFMQpBLMghheExCWIhADrQmIao9tS1poBc44ZWHFRCNmACE22B9wYQWBd98+Nrp1r7R3d3c75+sBt7b33d9vbIZ7kvPz66/l8z/md358rSRYNQB6AzUTkZuZeZo4ws6J6mJl7icgN4H0AeVbjWgGvIiIPM9+HRWPmOSI6DmDlw4CXE9ExZl60ChYIWSCiegDLcoW/wMyDSwULhPQDKLAKf42Zp0WBlLEgIu5v8OfOagQ3FiFQtAaBt15B8J1CTNRsRaTha8yPBMxEhACstZK5Aa6Mj2Jy32cIFK5G4M2XM3vhakx+/imU8VEzEeJKAHhcVPZoZweGy97IDtb5cNk6xH7pNFsOY08Q0TH95Jnmb3MGp/u9A3uFy0FETn32q/TdHu3sMA08tsWOsKsO0dMnEe04hbDLibEP7Fr4oVqA2awfFjRLQUQezZqPBTFc+roBPOpYj/jVS8KgABD/rQcj9lKEnAdN56RVwZ3M/kn9ITN9eLsBPr6tEjQ7mz1wPJZ1DgAwswxghQRgszbAH5DP5GNy17MpeHBjERZnwpYC52hVknp+p0y5/SVkXz5kXz7CR5/CcMlLiJ5pfxRwEFGjxMy96YP3r76dEiD78hE7UQAoyiMRwMx+iZkj6YPy+QKNgETfuxmD2PZHLfuF37WJMHNIYmbNqHzuaY2A+ZvivbwUAd6ehF7A/P8qoOmC9kZPCtC0t2EJeiv+MwEnrxgqEDI24TWbRsDQ+Veh0EJGESK7M7VoEHBxwNADfsE2/CoFbz/9ImyecnTc6spZQMvlhEHAxIz2aCaiRgkP3nD/DsbvYtb3DA60rkOxx45ijx3lrVsxPafZLBktNseoqItp4NWuv0VTKyUAecw8lz5a31Obgie9+uxu/JWIZoUri8Aer2zI/oRx/WUATyQvo+PpP47HprChpdIgwtH2MbpHrpnCb0WGsL3NC9v+iAZeUReDnDCUvyn9Ol6pXpEp8929aBCQ9Pd+qoHT34BTg2fRerMTrr5m7Di3ByWeTSj22FHy3W7YDgZSArpvaJtY3frP6x8k9fqMvAPtpiKyunsLyg5fMex9NfsjoifZcmYe0E/uGurGhpaqnAWUeh1o6PvRAGfm6wAeM3sXFqgPR41NxO/hi+6jKPFusgSv6dqHG+HbIvgUgOeE8DQRa0UigAfN2dzfhl2/1sL+w0co+96BUq8D5a0f4pOf98LV14zB8B3RX5PwNRnhukr0CyMtwdSyZ85cIGIZETn1uyNHsEJER2C25laroX4RyzmAZSJqgn6rPYwBWAGgiogamdnPzCFmnlc9xMx+ImoEUInkCWfB/gE22XEwH2GkwQAAAABJRU5ErkJggg=="
+        },
+        "174": {
+          "id": 174,
+          "index": 2,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170083695,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://github.com/oauthjs/node-oauth2-server",
+          "title": "oauthjs/node-oauth2-server: Complete, compliant and well tested module for implementing an OAuth2 Server/Provider with express in node.js",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABtUlEQVRYhb2WXZWDMBCFkYAEJNTB1sEiAQe7DoqDxQGVsA6KA+qgdQAOvn3osE3TmRAI7T0nL/mZe+cmmSTLFgAogRY4AT139NLXAp9LYsaQFhJ4IB6DrMlTyeuFxJqQwxri3LM4FT2xbgA70rK2MAC7mMxfQe6K0J1At/0MHIHrCrJR1nZef28JqJUglTNeeUI6r40OsbuuVOLWPnmBbv1eccncR4mTK30+HrdCrNKw90mWQkRrOLqTRmNStYEAbQsAhrkJI6mVLPt3wDrEZcj+5OwdEZXB0WQ8X5MJydl7IjR0Gbe77mPcklwEaIn2lrLLmwRgCeAFAtSDaA7wnjNwDR3CakNy66p3GdAYg6cNBVhJNiF1AN8bkFs1AKQQ5dilGNZ8qe7k2gs74V5peayGtbji1ocL8AN8RJDugC9ZE0LjLnKfzEGC5OhF6hwg/50hdVGE7BpEVMHz9pQz2cegtgK4GR8dd2ppVcQWzMF0UDuQ4V/scgHzT7zY6IpogcPUEgSM0QlhH8DZN8KyfTZzI9jTPV4hoF5M7AUsuJXrkYh/wjSPW20pksi9wHlMQJSveQh/HS6+epy9kZUAAAAASUVORK5CYII="
+        },
+        "175": {
+          "id": 175,
+          "index": 3,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170142035,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://oauth2-server.readthedocs.io/en/latest/api/request.html",
+          "title": "Request — oauth2-server 4.0.0-dev.2 documentation",
+          "favIconUrl": "data:image/png;base64,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"
+        },
+        "176": {
+          "id": 176,
+          "index": 4,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170156268,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.google.com/search?client=firefox-b-d&q=docker+oauth2+server",
+          "title": "docker oauth2 server - Google Search",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEBklEQVRYhb2XX2xTdRTH76OgzFen8UWHxCiCRnlxLvtjITEsJc3cFMQpBLMghheExCWIhADrQmIao9tS1poBc44ZWHFRCNmACE22B9wYQWBd98+Nrp1r7R3d3c75+sBt7b33d9vbIZ7kvPz66/l8z/md358rSRYNQB6AzUTkZuZeZo4ws6J6mJl7icgN4H0AeVbjWgGvIiIPM9+HRWPmOSI6DmDlw4CXE9ExZl60ChYIWSCiegDLcoW/wMyDSwULhPQDKLAKf42Zp0WBlLEgIu5v8OfOagQ3FiFQtAaBt15B8J1CTNRsRaTha8yPBMxEhACstZK5Aa6Mj2Jy32cIFK5G4M2XM3vhakx+/imU8VEzEeJKAHhcVPZoZweGy97IDtb5cNk6xH7pNFsOY08Q0TH95Jnmb3MGp/u9A3uFy0FETn32q/TdHu3sMA08tsWOsKsO0dMnEe04hbDLibEP7Fr4oVqA2awfFjRLQUQezZqPBTFc+roBPOpYj/jVS8KgABD/rQcj9lKEnAdN56RVwZ3M/kn9ITN9eLsBPr6tEjQ7mz1wPJZ1DgAwswxghQRgszbAH5DP5GNy17MpeHBjERZnwpYC52hVknp+p0y5/SVkXz5kXz7CR5/CcMlLiJ5pfxRwEFGjxMy96YP3r76dEiD78hE7UQAoyiMRwMx+iZkj6YPy+QKNgETfuxmD2PZHLfuF37WJMHNIYmbNqHzuaY2A+ZvivbwUAd6ehF7A/P8qoOmC9kZPCtC0t2EJeiv+MwEnrxgqEDI24TWbRsDQ+Veh0EJGESK7M7VoEHBxwNADfsE2/CoFbz/9ImyecnTc6spZQMvlhEHAxIz2aCaiRgkP3nD/DsbvYtb3DA60rkOxx45ijx3lrVsxPafZLBktNseoqItp4NWuv0VTKyUAecw8lz5a31Obgie9+uxu/JWIZoUri8Aer2zI/oRx/WUATyQvo+PpP47HprChpdIgwtH2MbpHrpnCb0WGsL3NC9v+iAZeUReDnDCUvyn9Ol6pXpEp8929aBCQ9Pd+qoHT34BTg2fRerMTrr5m7Di3ByWeTSj22FHy3W7YDgZSArpvaJtY3frP6x8k9fqMvAPtpiKyunsLyg5fMex9NfsjoifZcmYe0E/uGurGhpaqnAWUeh1o6PvRAGfm6wAeM3sXFqgPR41NxO/hi+6jKPFusgSv6dqHG+HbIvgUgOeE8DQRa0UigAfN2dzfhl2/1sL+w0co+96BUq8D5a0f4pOf98LV14zB8B3RX5PwNRnhukr0CyMtwdSyZ85cIGIZETn1uyNHsEJER2C25laroX4RyzmAZSJqgn6rPYwBWAGgiogamdnPzCFmnlc9xMx+ImoEUInkCWfB/gE22XEwH2GkwQAAAABJRU5ErkJggg=="
+        },
+        "177": {
+          "id": 177,
+          "index": 5,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170234230,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.ory.sh/run-oauth2-server-open-source-api-security/",
+          "title": "Run your own OAuth2 Server using open source - step by step - ory.sh",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA/1BMVEUAAABVKP9VVf9VKP5UJ/////9UKP9VJ/9/P/9UJ/5/f/9UJ/5VKP5UKP5UKP9VKv9mM/9UKP5fP/9UKP5VKP5VKP9VKf9VKP5UJ/5VKf9UKP9UKP5VKP5UKP5VKf9UKP9VKP9UKf9UKP5WKf9UKP5VKP5WK/9VKP9UJ/5XK/9UKP5WKf9VKP9UJ/9VKP9ZLP9ZM/9UKP9WKf9UKP5XK/9WKf9UKP5UKf5WKf9WKf9UKP5VKP5WKP9VKP9UL/5YLP5UJ/9UJ/9mM/9cLv5UKP5VKf9UKP9UJ/5YJ/5UMP5iOv5VKv9UKP5YKf9aKf5VLf9WK/9UKP9cLv5YLP9VKf5gLpPNAAAAVXRSTlMA/wP+/wH//wT+Avz7/voGBVcIsIaiaZ/2K7/qee9kiJ3F4lHSjCQzlkDbScqDPygU4ETCKYC9tFyP1OQ4axsXYXwKC6y6XrcaFQ0MizEfLU1wFjTNyMN36AAAAa5JREFUeJxtkudW4zAQhe9YE8m2ZOOQhATS6GVhYZdetvdeef9nYeTAASTP8Q9L99No5mpwH3kCHHT29oGW/EXhNxeXS9J0tiOrPNJF7ous5TMfD+uNx/pmrzREark71obM0U5ApOiyMq73E3g1HbOipQh4qgf9Rak0Bb5Mh3walJDgbedYuCpNqzng60Uv6uK9yHK67leQ+aBIX2cFbE6mG3+3gCrqsr7lda/UzGxO/6MBSPD7isk6Z5VRbVlGRv27olIVmYTk2Y9y5OhzaQolXil2tB5maOHXgAqvC5Gx5bXgkgTnbLNaF6JwtC3ePYwUJ9oVM10IS2ex1eyyOyCz9DkAEkzYqltCFZb6QQ05jgvp4bZIcvwpdKKFjinZlym6pdXv4cTkOBhQWWTK64obrEywa2unnSM9an6MrRV5KTL6eTvMPwPEmcOND53t9jskTXMPzN2dk4EJcyR42f0mSpW3Ui8vXASH/VSvjp7NLsrPr2WqQ+CHzvTwRJDqzTqxOQqAHC/2yBgejiaX2jQ1Isu1FU0sqtFPFubjFrwzf5Y0ZTO5qU+/t3s5DuQb3U4c5se5NAEAAAAASUVORK5CYII="
+        },
+        "178": {
+          "id": 178,
+          "index": 6,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170203675,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://docs.docker.com/registry/spec/auth/oauth/",
+          "title": "Oauth2 Token Authentication | Docker Documentation",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAABIFBMVEUAAAAAh8klQ1Yz1dRbQJf/tGPvSlMAiMoAh8kAh8gAhsjuSVIAh8n+s2L/AABcP5juSlJaQJYAh8kzzMwy1NP/s2MkQlb+s2JaQJcAh8laQJf/qlUkQlZbPZjvSlL+s2LuSVIlQlYlQ1YAf9TuSVI/P3/vS1Uz1dRaQJYfP1fMMzMz2NQAiMj/mWbvSVIAh8j/tWEkQlT/Pz9cLotZP5c019Qy1tQAhcf/s2HwS1r/tkgn19fvR1EzM5lVP5QAiMjfPz/uSVP/smIAh8MAh8kvz89aQJYAhsgz1NIt2toz1tQAiMcAhcn+s2Mx1NQz1tRaQJcAhsgAicQy1NM51NBfQJUkQVclRFYzzMwkRFUAhskAhsky1NT+s2JbQJcAhsiUPMKZAAAAYHRSTlMA////////h/dP39zo/QFHvPrMBbu12dPPs8EG4RnR2/3bsRLKBFH6riAFPEsF+pdMVQQLbGbOXC8RBw0yBRh2CNbJEacb38HWHK9YadhIcXb6Gt79/SO3ClrQrNLW0v5wzYocAAABYElEQVR4nHVR1WLDMAxUYkkrd2u3ctd2zMzMzMz7/7+Y7UCdJruH6Kw7W+cYDIz0MzMRFefMro+kVB2DRCMkq828ldF8TVmKQb3J3G2u+4jSxnKdudl5ZJqo6vE95mQ40zXRhkuZ96NSN4gcMsQz7a5lWT4nOlBlgXki2lAlmpYlGcgfj8fNu3zrBP5eB3pVVp+MSpHF5wjDoRVT5UlMQgXvJOsKYBdmLWtKtm9FLyDWze0aCfjUdfVcCGkInO8aHnQ9AteQCOoecuAZUlGyTq4NO/ARoevfcSwNFVyCq7CubwnL8hZZNeOfAXLCDegQ5Q751/3XcgLACY4BxAJ6ytUvxKP8biMOA+SM8YOunhcir2oJe1Tpulfq6WX7MYX4cghiyXhwH2c6gcIi4k9YXxHizeN1dKaYGBVi01iibb+a8oBte+e7aNkSLw4fV7wVmllTbQ+1qNTwXnDUwrzR/AONbhdns+ygyQAAAABJRU5ErkJggg=="
+        },
+        "179": {
+          "id": 179,
+          "index": 7,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170743082,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://blog.prototypr.io/how-to-build-google-login-into-a-react-app-and-node-express-api-821d049ee670",
+          "title": "How to build Google login into a React app and Node/Express API | by Jaye Hackett | Prototypr",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEX///9AZKxhvuz+/v6h2POgstVgves/Y6vM1ujp9vxYd7ad1vLm6/R5ksSY1PGo2vNDZq1twu1UdLSpudlNb7Hv+PxyQe6VAAAAc0lEQVR4nO3RSQ6AIAxA0VIHFOfp/lcVEDHaAhs3Jnb7X0ho4R86rZIZ5GWfBboSQmiAiAPbpe4OYMP0zvQTYE2B7R4g6VUKFG+DMgXoP++APvAAzLIdAAMm7hgHkAAbs8QLLHz0YA13C+ZI12CsYv3bswP8xgJ6+i4HdQAAAABJRU5ErkJggg=="
+        },
+        "180": {
+          "id": 180,
+          "index": 8,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170735335,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.npmjs.com/package/react-google-login",
+          "title": "react-google-login - npm",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEXLAAD////ZRETfYGDPEhLrm5vQGRlZCeKaAAAAJ0lEQVR4nGPAApyUgEAFyFAUBAIhNIZxIJTBYEg+A2gFQxLICnQAABRFB2yfkuDYAAAAAElFTkSuQmCC"
+        },
+        "181": {
+          "id": 181,
+          "index": 10,
+          "windowId": 40,
+          "highlighted": false,
+          "active": false,
+          "attention": false,
+          "pinned": false,
+          "status": "complete",
+          "hidden": false,
+          "discarded": true,
+          "incognito": false,
+          "width": 0,
+          "height": 0,
+          "lastAccessed": 1633170711201,
+          "audible": false,
+          "mutedInfo": {
+            "muted": false
+          },
+          "isInReaderMode": false,
+          "sharingState": {
+            "camera": false,
+            "microphone": false
+          },
+          "successorTabId": -1,
+          "cookieStoreId": "firefox-default",
+          "url": "https://www.oauth.com/oauth2-servers/differences-between-oauth-1-2/separation-of-roles/",
+          "title": "Separation of Roles - OAuth 2.0 Simplified",
+          "favIconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAgCAYAAADqgqNBAAAESklEQVRIia1X3StEaRj/nTNmjGMYH1PG54XGR8YdogxxgbgQEutGIzVREkIulJQLKWnLX6BQmxspSbl041a7KGFtmysXi9pdzPz2gvd1jnPOGLv71FNz3nne53ee3/Pxvgf4hng8nh8A0E6dTudP3/GXiKjC+f39PUny4uKCkUiE9fX1HBkZ4c3NDYVkZGQQANPT0wP/FZgOh4MkWVVVZYhyYmKCALizs2NYr66uJkk2NDSItX8H/PLyws7OTumYJFNTUwmAa2trBMDLy0sCYFZWFklKW03T9M+OhBC9Xm+mAMKnnArRP6uqSgBsa2uT616vV9Kvs09NKGKxob+/3+BgeXnZttj0GovFGIlEJPW6F0gMGAADgQDX19f58PAg11wulwmsvLycoVDIxJLNs1kURbGkWqjP56OiKJyamiIAKopCAKyrqyMA9vT0sKSkJC4jJOl0On+2jPrg4CDu5uTkZALgzMwMAbC9vZ0A2NzcLG1ycnJs99fV1dHpdJqif44XtV7fN8sWCwaDJpvMzMy40auq+psh6qurK0vjyspK05pIkZDW1lb5n6j+6elpS38DAwMfudc0rWN1ddXSsKOjQ9KalJQkKX99feVnCQQCdLvdBMDZ2VkCkDPhs9bX10vq4xZaKBSi2+1md3c3l5aWJHWfJSkpidXV1ZybmyPwNhntfMZiMaqq+suX4F6vl2VlZZyfn+fw8LAt+OjoKMfHx9nS0iKpj5d3Qb2hj/Xq8/kIgJOTk/T7/VQUhZeXl5bgJGV99Pb2xgU/OTn5AN/a2jIZlJaWEgDD4bBcS0lJsQUW0RQUFBAAI5EIAUi29CoOJQDg9va25RsODQ1ZUmYntbW1Bsb29vYs/YqCBAA+Pj6aDBYXFwm8jU6xtrCwEBdcl0s5iFZWVky+z87OPsD1m/Ta3d0tK16c64mAi8jS0tLiF5zD4fjVDhwAm5qa6HK5WFNTIwGi0aipI4Tk5uYS+JiEduCqqv4OAM7Dw0NbQ4/Hw2AwyOLiYgng9XoNNoWFhYbov2q1+fl5AnDiXXh8fGwyEheCyclJ7u7umvIKgBUVFaZC1N9+Puvd3Z3MNwBAUZS/7ajXt8rGxgbdbrdsFXGcijF8dHQkR6pVi+ny/Sf0oigK7Wa8XsX83tzcNLyAXv1+v+Xerq4ucQ8wiqIojMViX4ID4ODgoKGNrI7Q7Oxsy6gdDscfJnCReyv69cdjX18fATA/P1/WAwDm5eVJG03TCMDQFTq/ccXwAiS5v7/P29vbhFgRGo1GpZ9EgYH3LxSxQdM0uwgYjUblf0dHR2xqarIrMALQEgE3MKC/n8ViMQP48/Mzb25u5PPT05P87fF49LbKd4DfKFDVv8SXiFVUp6en+hOKAJienk6SLCoqSpjqr4QAeH5+TpK8vr7m2NgYGxsbGQ6HeXJyQpKGe2BaWprv/wCWkpyc/CNgX2Rut3vxO/7+AaCeSwAOhd3tAAAAAElFTkSuQmCC"
+        }
+      }
+    },
+    "windowsNumber": 1,
+    "windowsInfo": {
+      "40": {
+        "id": 40,
+        "focused": true,
+        "top": 0,
+        "left": 955,
+        "width": 970,
+        "height": 1055,
+        "incognito": false,
+        "type": "normal",
+        "state": "normal",
+        "alwaysOnTop": false,
+        "title": "Understand Personalized Button  |  Sign In With Google — Mozilla Firefox"
+      }
+    },
+    "tabsNumber": 11,
+    "name": "Understand Personalized Button  |  Sign In With Google",
+    "date": 1633173389836,
+    "lastEditedTime": 1633173389836,
+    "tag": [],
+    "sessionStartTime": 1633171980099,
+    "id": "1b6add02-cd8a-4180-8f2b-c3d01e5b008b"
+  }
+]

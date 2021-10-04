@@ -2,7 +2,7 @@
 
 import bcrypt from "bcrypt";
 
-import createConn from  "../db/dbconfig"
+import createConn from  "../../db/dbconfig"
 
 export async function createUser({
   name,

@@ -1,12 +1,4 @@
 
-# docker-compose up -d
-# docker-compose logs -f
-# docker-compose down
-
-# docker-compose -f .\docker-compose.dev.yml up -d
-# docker-compose -f .\docker-compose.dev.yml logs -f
-# docker-compose -f .\docker-compose.dev.yml down
-
 # https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/multi-container-applications-docker-compose
 
 version: "3.8"
@@ -22,17 +14,25 @@ services:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: referendum
   
-  api-server:
+  oauth:
     image: node:latest
-    # omitted yarn install, running on windows machine
-    # and npm cannot make link in ntfs
-    command: sh -c "yarn install && yarn run dev"
-    ports:
-      - 3001:3000
+    command: sh -c "yarn install && yarn run oauth_dev"
     working_dir: /app
+    ports:
+      - 3002:3000
     volumes:
       - ./:/app
-      - /app/node_modules
+      - server-node_modules:/app/node_modules
+  
+  api-server:
+    image: node:latest
+    command: sh -c "yarn install && yarn run dev"
+    working_dir: /app
+    ports:
+      - 3001:3000
+    volumes:
+      - ./:/app
+      - server-node_modules:/app/node_modules
     environment:
       MYSQL_HOST: mysql
       MYSQL_USER: root
@@ -42,31 +42,29 @@ services:
       - mysql
 
   react-client:
-    # docker-compose -f .\docker-compose.dev.yml restart react-client
     image: node:latest
+    command: sh -c "yarn install && yarn run start"
     working_dir: /app
     ports:
       - 3000:3000
     volumes:
-      - react-client-data:/app
+      - ../referendum-client:/app
       - /app/node_modules
-      - ../referendum-client/public:/app/public
-      - ../referendum-client/src:/app/src
-      - ../referendum-client/.env:/app/.env
-      - ../referendum-client/package.json:/app/package.json
-    command: sh -c "yarn install && yarn run start"
+      # - /app/yarn.lock
     
   
   server:
-    # docker exec -it referendum-server_server_1 nginx -s reload
     image: nginx:latest
     volumes:
       - ./nginx/api_conf.d:/etc/nginx/api_conf.d
+      - ./nginx/fragments:/etc/nginx/fragments
       - ./nginx/api_gateway.conf:/etc/nginx/api_gateway.conf
       - ./nginx/api_backends.conf:/etc/nginx/api_backends.conf
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./.secret/api_key.crt:/etc/ssl/certs/api_key.crt
       - ./.secret/api_key.key:/etc/ssl/private/api_key.key
+    tmpfs:
+      - /tmp
     ports:
       - 8000:80
       - 8080:8001
@@ -78,4 +76,18 @@ services:
 
 volumes:
   referendum-mysql-data:
-  react-client-data:
+  server-node_modules:
+
+
+  
+# docker-compose up -d
+# docker-compose logs -f
+# docker-compose down
+
+# docker-compose -f .\docker-compose.dev.yml up -d
+# docker-compose -f .\docker-compose.dev.yml logs -f
+# docker-compose -f .\docker-compose.dev.yml down
+
+
+# docker exec -it referendum-server_server_1 nginx -s reload
+# docker-compose -f .\docker-compose.dev.yml restart react-client

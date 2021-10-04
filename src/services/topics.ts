@@ -1,8 +1,8 @@
 
 import mysql, { escape } from "mysql2";
 
-import createConn from "../db";
-import { get, all, parseQueryToColumns } from "../db/util";
+import createConn from "../../db";
+import { get, all, parseQueryToColumns } from "../../db/util";
 
 /**
  * 

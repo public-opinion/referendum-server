@@ -1,5 +1,7 @@
 
 
+import bcrypt from "bcrypt";
+
 import createConn from "./dbconfig";
 
 import { get as _get } from "./index";
@@ -28,4 +30,28 @@ async function initTable(){
 }
 initTable();
 
+
+export async function validatePassword({
+  id, password
+}: {
+  id?: string
+  password?: string
+}){
+
+  try{
+    let res = await _get(`
+      SELECT password
+      FROM users
+      WHERE id=?
+    `, [ id ]);
+
+    console.log(res);
+
+    // bcrypt.compare(password, )
+    return res;
+
+  } catch(e){
+    console.error(e);
+  }
+}
 

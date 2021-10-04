@@ -7,18 +7,20 @@
 # docker run -it -v ${pwd}:/root -w=/root --entrypoint /bin/bash ubuntu:latest
 # docker run --name referendum-server -d -p 3000:80 referendum-server
 
-FROM node:16.5.0
+FROM node:latest
 # ENV NODE_ENV=production
 WORKDIR /app
 COPY ["package.json", "yarn.lock", "./"]
 
 # RUN npm install --production
 RUN yarn install
-COPY . .
-CMD yarn dev
+# COPY . .
+# CMD yarn dev
+
+CMD /bin/bash
 
 # build image
-# docker build --tag referendum .
+# docker build --tag referendum-server-base .
 
 # run image in dev mode (powershell)
 # 

@@ -1,6 +1,6 @@
 
 
-import createConn, { get, all } from "../db";
+import createConn, { get, all } from "../../db";
 
 
 createConn({

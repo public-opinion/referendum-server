@@ -2,11 +2,11 @@
 
 import { intersection } from "../../util/arrays";
 import { filterObjectByKeys } from "../../util/object";
-import { get, all } from "../../db";
+import { get, all } from "../../../db";
 
 import express from "express";
 import { createTopic, getTopic, getTopics } from "../../services/topics";
-import { parseQueryToColumns } from "../../db/util";
+import { parseQueryToColumns } from "../../../db/util";
 const router = express.Router();
 
 
