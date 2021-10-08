@@ -2,11 +2,6 @@ import type {
   FastifyPluginCallback,
   FastifyPluginOptions
 } from "fastify";
-import type {
-  Http2SecureServer,
-  Http2ServerRequest,
-  Http2ServerResponse
-} from 'http2';
 import { Server } from "http";
 
 type FastifyPluginType = FastifyPluginCallback<

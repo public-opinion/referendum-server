@@ -3,10 +3,8 @@
 import { readFileSync } from "fs";
 import path from "path";
 import type {
-  Http2SecureServer,
-  Http2ServerRequest,
-  Http2ServerResponse
-} from 'http2';
+  Server,
+} from 'http';
 
 import type {
   FastifyInstance,
@@ -17,19 +15,13 @@ import Fastify from 'fastify'
 // yarn exec .\node_modules\.bin\ts-node.cmd .\oauth\index.ts
 // yarn run nodemon .\oauth\index.ts
 
-const app: FastifyInstance<Http2SecureServer> = Fastify({
+const app: FastifyInstance<Server> = Fastify({
   logger: true,
-  http2: true,
-  https: {
-    allowHTTP1: true,
-    key: readFileSync(path.join(__dirname, "..", ".secret", "oauth_key.key")),
-    cert: readFileSync(path.join(__dirname, "..", ".secret", "oauth_key.crt")),
-  }
 });
 
 
 import validate from "./routes/validate";
-app.register(validate);
+app.register(validate, { prefix: "/oauth" });
 
 import registerPing from "./routes/ping";
 registerPing(app);
@@ -38,7 +30,7 @@ registerPing(app);
 
 const start = async () => {
   try{
-    await app.listen(3000);
+    await app.listen(3000, '0.0.0.0');
 
     const [ address, port ] = ((info) => {
       if(typeof info === "string"){

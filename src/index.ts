@@ -12,12 +12,13 @@ var dbg = debug('your-project-name:server');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+app.set("address", "0.0.0.0");
  
 /**
  * Create HTTP server.
  */
  
-var server = http.createServer(app);
+var server: http.Server= http.createServer(app);
  
 /**
  * Listen on provided port, on all network interfaces.
@@ -26,6 +27,7 @@ var server = http.createServer(app);
 server.on('error', onError);
 server.on('listening', onListening);
 server.listen(port);
+
 
 import WebSocket from "ws";
 const wss = new WebSocket.Server({ noServer: true });
@@ -120,5 +122,6 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr?.port;
   dbg('Listening on ' + bind);
+  console.log('Listening on', addr, bind);
 }
  

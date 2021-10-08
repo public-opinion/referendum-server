@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "wait-port -t 10000 mysql:3306 && nodemon --legacy-watch src/index.ts",
+    "dev": "wait-port -t 10000 mysql:3306 && nodemon --legacy-watch -i ./oauth src/index.ts",
     "oauth_dev": "nodemon --legacy-watch -i ./src ./oauth/index.ts"
   },
   "license": "MIT",

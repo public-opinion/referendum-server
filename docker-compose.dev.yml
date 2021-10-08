@@ -11,8 +11,17 @@ services:
     volumes:
       - referendum-mysql-data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: secret
-      MYSQL_DATABASE: referendum
+      # MYSQL_DATABASE: referendum
+      # MYSQL_ROOT_PASSWORD: secret
+      - MYSQL_USER=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    entrypoint: sh -c "
+        echo 'CREATE DATABASE IF NOT EXISTS referendum;
+            CREATE DATABASE IF NOT EXISTS logindb;' > \
+            /docker-entrypoint-initdb.d/init.sql;
+        /usr/local/bin/docker-entrypoint.sh \
+            --character-set-server=utf8mb4 \
+            --collation-server=utf8mb4_unicode_ci"
   
   oauth:
     image: node:latest
